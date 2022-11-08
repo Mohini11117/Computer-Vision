@@ -1,0 +1,10 @@
+import cv2
+path=input("Enter a path")
+print("Path is",path)
+
+img1=cv2.imread(path,0)#0=black and white image 1=colorful img
+img1=cv2.resize(img1,(400,300 ))
+cv2.imshow("GRAY SCALE IMG",img1)
+cv2.waitKey(0)
+print(img1)
+cv2.destroyAllWindows(3000)
